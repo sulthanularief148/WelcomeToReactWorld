@@ -61,6 +61,19 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 
 - Packages that are needed only during development or testing (e.g., Babel, Webpack). These are not required in production.
 
+## **what is package.lock.json?**
+
+- package-lock.json is an automatically generated file in a Node.js project that locks the versions of the dependencies installed.
+- It is created when you run npm install and records the exact version of each package, including all of its dependencies, ensuring consistent installations across different environments or systems.
+
+## **What is Nodemodules?**
+
+- This folder is created when you run npm install, and it contains both the project's direct dependencies (listed in package.json) and their sub-dependencies (i.e., dependencies of dependencies).
+
+## **What is Transitive Dependency?**
+
+- A transitive dependency is a dependency of a dependency in your project. In other words, it is not a direct dependency, but rather a package that gets installed as a result of installing another package. These dependencies are automatically included in your project by the package manager
+
 ## Difference Between Caret (^) and Tilde (~)
 
 ### **Caret (^)**:
@@ -93,5 +106,3 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 - **Different Dev and Prod Bundles** – Separates development and production builds for optimized performance.
 
 ---
-
-This README provides a comprehensive overview of essential concepts and tools for React development. Use it as a reference when setting up your React projects or expanding your knowledge in React and its ecosystem. Happy coding!
